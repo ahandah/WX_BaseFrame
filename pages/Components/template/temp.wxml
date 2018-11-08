@@ -1,0 +1,48 @@
+<template name='Toast'>
+  <view class="showModule" wx:if="{{isShow}}">
+    <view class="text ">{{text}}</view>
+  </view>
+</template>
+
+<!-- <template name="getUserInfo">
+  <view class="openSetting view-column" wx:if="{{showUserInfo}}">
+    <view style="margin: 10px; font-size: 20px; text-align: center;">需要用户授权</view>
+    <view class="view-row">
+      <button style="width: 40%;" bindtap="bindCancel">取消</button>
+      <button style="width: 40%;" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+        确认
+      </button>
+    </view>
+  </view>
+</template> -->
+
+<template name="getUserInfo">
+<view wx:if="{{showUserInfo}}" class="toast-background"></view>
+  <view wx:if="{{showUserInfo}}" class="openSetting view-column" style="color: #333333">
+    <view style="margin: 20px; font-size: 20px; text-align: center;">需要用户授权</view>
+    <view class="view-row" style="margin-bottom: 15px;">
+      <button style="width: 40%; background: #FFF;" bindtap="bindCancelUserInfo">取消</button>
+      <button style="width: 40%; background: #FFF; border: 1px solid #F70A36; color: #F70A36;"
+      open-type="getUserInfo" bindgetuserinfo="bindCancelUserInfo">
+        确认
+      </button>
+    </view>
+  </view>
+</template>
+
+<!-- scope.userLocation -->
+<template name="userLocation">
+<view wx:if="{{showUserLocation}}" class="toast-background"></view>
+  <view wx:if="{{showUserLocation}}" class="openSetting view-column" style="color: #333333" >
+    <view style="margin: 20px; font-size: 20px; text-align: center;">需要定位授权</view>
+    <view class="view-row" style="margin-bottom: 15px;">
+      <button style="width: 40%; background: #FFF;" bindtap="bindCancelLocation">取消</button>
+      <button style="width: 40%; background: #FFF; border: 1px solid #F70A36; color: #F70A36;"
+      open-type="openSetting" bindtap="bindCancelLocation">
+        确认
+      </button>
+    </view>
+  </view>
+</template>
+
+

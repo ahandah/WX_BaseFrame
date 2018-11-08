@@ -1,0 +1,12 @@
+<!--pages/Components/MyList/MyList.wxml-->
+<view class="list-item" wx:for="{{arrayData}}" bindtap="click" >
+  <view class="view-row" style="margin: 5px">
+    <image src="/image/1.png" class="img-logo" mode="aspectFill"/>
+    <view class="view-column" style="box-sizing: border-box; width: 80%" >
+      <view class="name">name{{item.id}}</view>
+      <view class="discribe">discribediscribediscribediscribediscribediscrib</view>
+    </view>
+    
+  </view>
+  <view class="divide-x" style="margin: 0 0"></view>
+</view>

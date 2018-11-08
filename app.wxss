@@ -1,0 +1,100 @@
+/**app.wxss**/
+/* @import "./pages/Components/MyList/MyList.wxss"; */
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.view-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.view-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .divide-x {
+  background: #efefef;
+  height: 1px;
+  width: 100%;
+  box-sizing: border-box;
+} */
+
+.list-item {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 横线 */
+
+.divide-x {
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+/* 竖线 */
+
+.divide-y {
+  width: 1px;
+  background-color: #e4e4e4;
+}
+
+.showModule {
+  position: fixed;
+  left: 20%;
+  top: 40%;
+  width: 60%;
+  opacity: 0.80;
+  background-color: #5c5c5c;
+  border-radius: 10rpx;
+  z-index: 9999;
+}
+
+.showModule .text {
+  /* flex 布局 */
+  display: flex;
+  /* 字体加粗 *//* font-weight: bold; */
+  color: white;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  width: 90%;
+  word-break: break-all;
+  padding: 10px;
+  justify-content: center;
+}
+
+.toast-background {
+  position: absolute; 
+  height: 100%; 
+  width: 100%; 
+  background-color:rgba(0,0,0,0.5); 
+  z-index: 999;
+}
+
+.view-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.view-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.view-bot {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 45px;
+  background-color: #FFF; 
+  z-index: 999;
+}
+

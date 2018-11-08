@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- <view class="list-item" wx:for="{{lData}}">
+    <view >{{item.id}}</view>
+    <view class="divide-x"></view>
+  </view> -->
+
+  <!-- <MyList
+    style="width: 100%;"
+    arrayData="{{lData}}"
+    bindclickComponent="clickComponent">
+  </MyList> -->
+
+  <!-- <view bindtap='click'>sdfsdf</view> -->
+  <view bindtap="bind1">123</view>
+</view>

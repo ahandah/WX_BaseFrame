@@ -1,0 +1,51 @@
+
+.ainfo {
+  position: relative;
+  height: auto;
+  top: 30rpx;
+  margin: 0 20rpx;
+  font-size: 28rpx;
+}
+
+.topview {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 20rpx;
+}
+
+.topview text{
+  float: right;
+  font-size: 28rpx;
+}
+
+.boderview {
+  border-radius: 10px;
+  margin: 20rpx 0;
+  padding: 20rpx;
+  background-color: #fff;
+  line-height: 100rpx;
+}
+
+.iteminfo {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.iteminfo input {
+  float: right;
+  width: 500rpx;
+  margin: 0 auto;
+  text-align: right;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.getsmscode {
+  float: right;
+  width: 200rpx;
+  font-size: 28rpx;
+  margin: -100rpx auto auto auto;
+  text-align: center;
+  color: #F70A36;
+}

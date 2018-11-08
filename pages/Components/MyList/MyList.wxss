@@ -1,0 +1,17 @@
+/* pages/Components/MyList/MyList.wxss */
+@import '/app.wxss';
+
+.img-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.name, .discribe {
+  /* flex: 1; */
+}
+
+.discribe {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
